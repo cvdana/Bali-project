@@ -1,7 +1,26 @@
-h1 {
+body {
   font-family: "Poppins";
+}
+
+h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 170px;
   line-height: 144px;
+  margin: 0;
+}
+h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 5px;
+  line-height: 36px;
+  margin: 0 10px;
+}
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 2;
+  margin: 0 10px;
 }
