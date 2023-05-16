@@ -60,7 +60,7 @@ header h2 {
   position: relative;
   top: 120px;
 }
-header a {
+header .more {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
@@ -73,4 +73,11 @@ header a {
   line-height: 1.5;
   position: relative;
   top: -25px;
+}
+header p {
+  margin: 0 10px;
+  font-size: 10px;
+}
+header p a {
+  color: #fff;
 }
