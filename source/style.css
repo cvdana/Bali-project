@@ -1,26 +1,62 @@
 body {
   font-family: "Poppins";
+  font-style: normal;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 h1 {
-  font-style: normal;
   font-weight: 700;
   font-size: 170px;
   line-height: 144px;
   margin: 0;
+  display: inline-block;
+  text-transform: none;
+}
+.reflection,
+.reflection::before {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.reflection,
+.reflection::before,
+.reflection::after {
+  position: relative;
+}
+
+.reflection::before {
+  content: "Bali";
+  top: 270px;
+  transform: scale(1, -1);
+  backface-visibility: visible;
+  z-index: 1;
+  background: linear-gradient(2deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+}
+.reflection::after {
+  content: "";
+  display: block;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  z-index: 2;
 }
 h2 {
-  font-style: normal;
   font-weight: 900;
   font-size: 32px;
   letter-spacing: 5px;
   line-height: 36px;
   margin: 0 10px;
-}
-p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 2;
-  margin: 0 10px;
+  position: relative;
+  top: 120px;
 }
