@@ -1,3 +1,6 @@
+:root {
+  --header-margin: 0 10px;
+}
 body {
   font-family: "Poppins";
   font-style: normal;
@@ -15,7 +18,6 @@ header h1 {
   font-weight: 700;
   font-size: 170px;
   line-height: 0.85;
-  margin: 0;
   display: inline-block;
   text-transform: none;
 }
@@ -56,7 +58,7 @@ header h2 {
   font-size: 32px;
   letter-spacing: 5px;
   line-height: 0.5;
-  margin: 0 10px;
+  margin: var(--header-margin);
   position: relative;
   top: 120px;
 }
@@ -69,13 +71,13 @@ header .more {
   border: 1px #fff solid;
   border-radius: 20px;
   padding: 10px;
-  margin: 0 10px;
+  margin: var(--header-margin);
   line-height: 1.5;
   position: relative;
   top: -25px;
 }
 header p {
-  margin: 0 10px;
+  margin: var(--header-margin);
   font-size: 10px;
 }
 header p a {
