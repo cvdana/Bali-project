@@ -50,6 +50,7 @@ header h1 {
   backface-visibility: visible;
   z-index: 1;
   background: linear-gradient(1deg, var(--primary-color) 0, transparent 80%);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0.5;
