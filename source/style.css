@@ -19,8 +19,11 @@ a {
 .grid-2-columns {
   grid-template-columns: auto auto;
 }
-.grid-3-colums {
+.grid-3-colums-footer {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.text-center {
+  text-align: center;
 }
 section {
   max-width: 1200px;
@@ -140,7 +143,7 @@ main p {
 main .author a {
   color: var(--subheadings-color);
 }
-.temple {
+.img-responsive {
   width: 100%;
   height: 100%;
 }
