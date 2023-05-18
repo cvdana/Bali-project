@@ -140,7 +140,7 @@ main p {
 
 .temple {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 footer .author {
   text-align: center;
@@ -201,5 +201,15 @@ footer a {
   }
   header p {
     text-align: center;
+  }
+  main h3 {
+    font-size: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  section {
+    padding: 30px;
   }
 }
