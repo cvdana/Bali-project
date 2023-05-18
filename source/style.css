@@ -1,16 +1,26 @@
 :root {
   --header-margin: 0 10px;
   --primary-color: #fff;
+  --main-color: #ede9e8;
+  --subheadings-color: #272044;
 }
 body {
   font-family: "Poppins";
   font-style: normal;
   margin: 0;
 }
+a {
+  font-family: "Poppins";
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 65px;
+}
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+.grid-3-colums {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 section {
   max-width: 1200px;
@@ -81,7 +91,6 @@ header .more {
   text-decoration: none;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Poppins";
   text-align: center;
   border: 1px var(--primary-color) solid;
   border-radius: 20px;
@@ -96,17 +105,47 @@ header .more {
   margin: var(--header-margin);
   font-size: 10px;
 }
-footer .author {
-  text-align: center;
-}
 .author a,
 footer a {
   color: var(--primary-color);
 }
+.main-information {
+  background-color: var(--main-color);
+  padding: 20px 40px;
+}
+main h2,
+main h3 {
+  font-weight: 700;
+  color: var(--subheadings-color);
+}
+main h2 {
+  font-size: 16px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  opacity: 0.4;
+  margin: 0;
+}
+main h3 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--subheadings-color);
+  opacity: 0.7;
+}
+
 .temple {
-  width: 30%;
+  width: 100%;
   height: 500px;
 }
+footer .author {
+  text-align: center;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("../images/footer.jpg");
