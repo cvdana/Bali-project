@@ -49,19 +49,15 @@ a {
   aspect-ratio: 1/1;
 }
 .secondary-title {
-  position: absolute;
-  top: 1770px;
+  display: none;
 }
 .secondary-frame {
   background-color: var(--seconday-color);
+  border: 1px solid var(--seconday-color);
+  padding: 30px;
   width: 50%;
-  height: 20%;
-  position: absolute;
-  left: 0;
-  top: 1725px;
 }
 .secondary {
-  margin-top: 30px;
   background-color: #f8f8f8;
 }
 section {
@@ -82,42 +78,14 @@ header h1 {
   font-weight: 700;
   font-size: 170px;
   line-height: 0.85;
-  display: inline-block;
-  text-transform: none;
 }
-.reflection,
-.reflection::before {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.reflection,
-.reflection::before,
-.reflection::after {
-  position: relative;
+.reflection {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--primary-color);
+  text-stroke: 2px var(--primary-color);
+  text-shadow: none;
 }
 
-.reflection::before {
-  content: "Bali";
-  top: 270px;
-  transform: scale(1, -1);
-  backface-visibility: visible;
-  z-index: 1;
-  background: linear-gradient(1deg, var(--primary-color) 0, transparent 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0.5;
-}
-.reflection::after {
-  content: "";
-  display: block;
-  top: -40px;
-  left: 0;
-  width: 100%;
-  height: 170px;
-  z-index: 2;
-}
 header h2 {
   font-weight: 900;
   font-size: 32px;
@@ -140,8 +108,8 @@ header .more {
   margin: var(--header-margin);
   line-height: 1.5;
   position: relative;
-  top: -25px;
-  width: 17%;
+  top: -110px;
+  width: 20%;
 }
 .author {
   margin: var(--header-margin);
@@ -259,21 +227,17 @@ footer a {
 @media (max-width: 960px) {
   header h1 {
     font-size: 80px;
-    line-height: 3.75;
     text-align: center;
   }
   .reflection::before,
   .reflection::after {
     display: none;
   }
-  header h2 {
-    line-height: 1.7;
-    font-size: 20px;
-    text-align: center;
-  }
+
   header .more {
     display: block;
     text-align: center;
+    top: -40px;
     margin: 0 auto;
     width: 30%;
   }
@@ -284,7 +248,7 @@ footer a {
     font-size: 30px;
   }
   .secondary-title {
-    position: static;
+    display: inline;
     text-align: center;
   }
   .secondary-frame {
