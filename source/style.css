@@ -13,6 +13,11 @@ body {
 a {
   font-family: "Poppins";
 }
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
 .grid {
   display: grid;
   grid-gap: 65px;
@@ -161,6 +166,7 @@ main h2 {
   line-height: 1.5;
   opacity: 0.4;
   margin: 0;
+  text-transform: uppercase;
 }
 main h3 {
   font-size: 40px;
@@ -294,6 +300,7 @@ footer a {
   .embed {
     aspect-ratio: 16/9;
   }
+
   section {
     padding: 30px;
   }
