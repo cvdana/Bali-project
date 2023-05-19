@@ -61,6 +61,23 @@ a {
 .secondary {
   background-color: #f8f8f8;
 }
+table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  border: 1px solid var(--primary-color);
+  font-size: 20px;
+  position: relative;
+  left: 950px;
+  top: -40px;
+}
+th {
+  border-collapse: separate;
+  border-spacing: 7px;
+  border: 1px solid var(--primary-color);
+}
+tbody {
+  text-align: center;
+}
 
 section {
   max-width: 100%;
@@ -267,7 +284,9 @@ footer a {
   .embed {
     aspect-ratio: 16/9;
   }
-
+  table {
+    display: none;
+  }
   section {
     padding: 30px;
   }
