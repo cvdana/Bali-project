@@ -288,6 +288,12 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
   section {
     padding: 30px;
   }
