@@ -61,6 +61,7 @@ a {
 .secondary {
   background-color: #f8f8f8;
 }
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -156,6 +157,7 @@ main .author a {
   width: 100%;
   height: 100%;
   display: block;
+  filter: saturate(140%);
 }
 
 main h4 {
