@@ -55,7 +55,8 @@ a {
   background-color: var(--seconday-color);
   border: 1px solid var(--seconday-color);
   padding: 30px;
-  width: 50%;
+  text-align: left;
+  width: 40%;
 }
 .secondary {
   background-color: #f8f8f8;
