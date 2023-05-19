@@ -26,6 +26,9 @@ a {
 .grid-3-colums-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card {
   margin: 30px 0;
   background-color: var(--primary-color);
@@ -35,6 +38,10 @@ a {
 }
 .card-footer {
   padding: 5px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .secondary-title {
   position: absolute;
@@ -172,12 +179,10 @@ main .author a {
 }
 .img-responsive {
   width: 100%;
-  max-height: fit-content;
+  height: 100%;
   display: block;
 }
-.village {
-  height: 300px;
-}
+
 main h4 {
   font-weight: 700;
   font-size: 24px;
